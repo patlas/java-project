@@ -9,9 +9,26 @@ public class Main {
 		WebDownloader wd = new WebDownloader();
 		
 		try{
-			wd.init();
+			//wd.init();
+			String [][] List = WebDownloader.stationsList();
+			
+			for( String[] a : List){
+				if(a[0] == null) continue;
+				//System.out.println(a[0] + ": " + a[1]);
+			}
+			
+			WebDownloader.MainPageProgramms();
+			
+			String [][] x = WebDownloader.stationProgramms("program-tv/stacje/TVP-1");
+			
+			for( String[] c : x){
+				System.out.println(c[0] + "  " + c[1] /*+ " " +c[2]*/);
+			}
+			
 		}
-		catch(Exception e){}
+		catch(Exception e){
+			System.out.println("ERROR" + e);
+		}
 	}
 
 }
