@@ -1,0 +1,5 @@
+1. W plikach zewnêtrznych bêd¹ trzymane translacje -> ³adowanie wstêpnych ustawieñ z pliku
+2. Wyskakuj¹cy popu do logowania do bazy danych
+3. Baza danych przechowuje co???
+4. Dopisaæ logger
+
